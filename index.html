@@ -43,7 +43,7 @@
 			<section class="hero">
 				<div class="container">
 					<h1 class="hero-title">Effective Solutions for Your Business</h1>
-					<button class="model-btn" type="button">Order Service</button>
+					<button class="model-btn" type="button" data-modal-open>Order Service</button>
 				</div>
 			</section>
 			<!--Section 1 Hidden title-->
@@ -361,7 +361,7 @@
 						</li>
 						<li class="footer-list-item">
 							<a href="" class="footer-list-link link">
-								<svg class="footer-list-icon" width="24" height="16">
+								<svg class="footer-list-icon" width="24" height="24">
 									<use href="./images/sprite.svg#icon-linkedin-1"></use>
 								</svg>
 							</a>
@@ -370,5 +370,14 @@
 				</div>
 			</div>
 		</footer>
+		<div class="backdrop is-hidden" data-modal>
+			<div class="modal-content">
+				<button type="button" class="close-btn" data-modal-close></button>
+				<svg class="modal-close-btn" width="8" height="8">
+					<use href="./images/sprite2.svg#icon-close-black-new"></use>
+				</svg>
+			</div>
+		</div>
+		<script src="./js/modal.js"></script>
 	</body>
 </html>
