@@ -4,6 +4,7 @@
 	--main-title-color: #2e2f42;
 	--secondary-title-color: #434455;
 	--accent-color: #4d5ae5;
+	--transition-dur-and-fun: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 body {
 	font-family: var(--primary-font);
@@ -146,7 +147,7 @@ button {
 	font-weight: 500;
 	color: var(--main-title-color);
 	position: relative;
-	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: color var(--transition-dur-and-fun);
 }
 .menu-link:hover,
 .menu-link:focus {
@@ -163,7 +164,7 @@ button {
 .contact-email {
 	font-style: normal;
 	color: #434455;
-	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: color var(--transition-dur-and-fun);
 }
 
 .contact-email:hover,
@@ -174,7 +175,7 @@ button {
 .contact-phone {
 	font-style: normal;
 	color: #434455;
-	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: color var(--transition-dur-and-fun);
 }
 .contact-phone:hover,
 .contact-phone:focus {
@@ -197,7 +198,7 @@ button {
 	display: block;
 	margin: auto;
 	padding: 16px 32px;
-	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: color var(--transition-dur-and-fun), background-color var(--transition-dur-and-fun);
 }
 
 .model-btn:hover,
@@ -286,7 +287,7 @@ button {
 	padding-bottom: 164px;
 	padding-left: 32px;
 	padding-right: 32px;
-	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: transform var(--transition-dur-and-fun);
 }
 .img-content-overlay {
 	position: relative;
@@ -301,7 +302,7 @@ button {
 .img-content-link {
 	display: block;
 	text-decoration: none;
-	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: box-shadow var(--transition-dur-and-fun);
 }
 
 .img-content-link:hover {
@@ -408,7 +409,7 @@ button {
 	height: 40px;
 	border-radius: 50%;
 	background-color: #4d5ae5;
-	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: background-color var(--transition-dur-and-fun);
 }
 
 .social-list-link:hover,
@@ -433,7 +434,7 @@ button {
 	border: 1px solid #8e8f99;
 	border-radius: 4px;
 	color: #8e8f99;
-	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: color var(--transition-dur-and-fun), border-color var(--transition-dur-and-fun);
 }
 
 .client-list-icon {
@@ -465,8 +466,8 @@ button {
 	color: var(--accent-color);
 	border: 1px solid #e7e9fc;
 	border-radius: 4px;
-	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-		border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: background-color var(--transition-dur-and-fun), color var(--transition-dur-and-fun),
+		border-color var(--transition-dur-and-fun), box-shadow var(--transition-dur-and-fun);
 }
 .btn-icon:hover,
 .btn-icon:focus {
@@ -515,7 +516,7 @@ button {
 	background-color: rgba(255, 255, 255, 0.1);
 	width: 40px;
 	height: 40px;
-	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: background-color var(--transition-dur-and-fun);
 }
 
 .footer-list-link:hover,
@@ -553,7 +554,7 @@ button {
 	width: 100%;
 	height: 100%;
 	background-color: rgba(46, 47, 66, 0.4);
-	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: opacity var(--transition-dur-and-fun), visibility var(--transition-dur-and-fun);
 }
 .backdrop.is-hidden {
 	opacity: 0;
@@ -585,7 +586,7 @@ button {
 	background-color: #e7e9fc;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	padding: 0;
-	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: background-color var(--transition-dur-and-fun);
 }
 
 .close-btn:hover,
@@ -595,11 +596,11 @@ button {
 
 .close-btn:hover .modal-close-btn,
 .close-btn:focus .modal-close-btn {
-	color: #ffffff;
+	fill: #ffffff;
 }
 
 .modal-close-btn {
-	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: fill var(--transition-dur-and-fun);
 }
 
 /*=================/<modal window===============*/
