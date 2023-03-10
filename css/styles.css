@@ -129,9 +129,6 @@ button {
 	margin-bottom: 16px;
 }
 
-.current {
-	color: #4d5ae5;
-}
 .current::after {
 	content: "";
 	display: inline-block;
@@ -141,7 +138,7 @@ button {
 	background: #404bbf;
 	border-radius: 2px;
 	left: 0;
-	top: 48px;
+	top: 44px;
 }
 .menu-link {
 	font-weight: 500;
@@ -153,7 +150,9 @@ button {
 .menu-link:focus {
 	color: var(--accent-color);
 }
-
+.current {
+	color: #4d5ae5;
+}
 .contacts {
 	margin-left: auto;
 }
